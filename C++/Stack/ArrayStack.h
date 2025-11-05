@@ -8,7 +8,7 @@ template <class T>
 class ArrayStack {
 private:
     int top;
-    int capacity;
+    int capacity = 10; //Default capacity is 10
     T *elements;
     public:
     ArrayStack(int capacity) {
@@ -27,16 +27,16 @@ private:
         return top == -1;
     };
     bool push(T element) {
-        if (isFull()) {
+        if (isFull()) { //Checks if the stack is full
            std::cout << "Stack is full" << std::endl;
            return false;
         }
-        elements[++top] = element;
+        elements[++top] = element;//Add element to the top
         return true;
 
     };
     T pop() {
-        if (!isEmpty()) {
+        if (!isEmpty()) { //Checks if the stack is empty
            return elements[top--];
         }
         std::cout << "Stack is empty" << std::endl;
@@ -45,7 +45,7 @@ private:
     T peek() const{
         if (isEmpty()) {
             std::cout << "Stack is empty" << std::endl;
-            return T();
+            return T();//if its empty send default value.
         }
             return elements[top];
         }
