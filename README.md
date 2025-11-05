@@ -1,6 +1,6 @@
 # Data Structures Practice Repository
 
-This repository contains my personal implementations of basic data structures in Java and C++.  
+This repository contains my personal implementations of basic data structures in many languages
 
 **Purpose:**  
 - This is a learning repository where I practice and reinforce fundamental Data Structures concepts such as Stack, Queue, Linked Lists, etc.  
