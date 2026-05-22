@@ -38,5 +38,11 @@ public class TestStacks {
         } catch (RuntimeException e) {
             System.out.println("Caught expected exception: " + e.getMessage());
         }
+        //Queue Test
+        Queue<String> q = new Queue<>(3);
+        q.enqueue("Yusuf");
+        q.enqueue("Güven");
+        System.out.println(q.dequeue());
+
     }
 }

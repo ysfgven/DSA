@@ -20,7 +20,7 @@ public class ArrayStack<T> {
 
     public void push(T item){
         if (isFull())
-            throw new StackOverflowError("Stack is full");
+            throw new IllegalStateException("Stack is full");
         stack[++top]=item; //adds top
     }
     public T pop(){
